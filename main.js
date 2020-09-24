@@ -1,3 +1,10 @@
+/**
+ *
+ *
+ * @param   {[type]}  username  username on github
+ *
+ * @return  {[type]}            markup
+ */
 const listRepos = async (username) => {
   const repos = await fetch(`
       https://api.github.com/users/${username}/repos?type=owner&sort=updated
